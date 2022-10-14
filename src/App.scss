@@ -14,7 +14,7 @@
 html {
   font-size: 100%;
 
-  @include table {
+  @include tablet {
     font-size: 80%;
   }
 
@@ -34,7 +34,7 @@ body {
   @include mobile {
     margin-bottom: 3rem;
   }
-  @include table {
+  @include tablet {
   }
 }
 

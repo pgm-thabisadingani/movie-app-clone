@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Catelog from "./Catelog";
+import Catalog from "./Catalog";
 import Detail from "./Detail";
 
-export { Home, Detail, Catelog };
+export { Home, Detail, Catalog };
