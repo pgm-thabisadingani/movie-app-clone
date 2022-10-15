@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/movie-app-clone/static/css/main.3f35e648.css",
+    "main.js": "/movie-app-clone/static/js/main.8f3ad8bb.js",
+    "static/media/tmovie.png": "/movie-app-clone/static/media/tmovie.d985d6b4386582f864dc.png",
+    "static/media/boxicons.svg": "/movie-app-clone/static/media/boxicons.045b05bf2dc119267a90.svg",
+    "static/media/footer-bg.jpg": "/movie-app-clone/static/media/footer-bg.67e95f05e76a8cebf7e2.jpg",
+    "static/media/boxicons.eot": "/movie-app-clone/static/media/boxicons.092b78589f3f53e60030.eot",
+    "static/media/boxicons.woff": "/movie-app-clone/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
+    "static/media/boxicons.ttf": "/movie-app-clone/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
+    "static/media/boxicons.woff2": "/movie-app-clone/static/media/boxicons.8d765747a5588f36ff61.woff2",
+    "static/media/no-cover.png": "/movie-app-clone/static/media/no-cover.cbd9003e4ddc1ed32d4e.png",
+    "index.html": "/movie-app-clone/index.html",
+    "main.3f35e648.css.map": "/movie-app-clone/static/css/main.3f35e648.css.map",
+    "main.8f3ad8bb.js.map": "/movie-app-clone/static/js/main.8f3ad8bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f35e648.css",
+    "static/js/main.8f3ad8bb.js"
+  ]
+}
