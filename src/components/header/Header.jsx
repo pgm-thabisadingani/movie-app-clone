@@ -13,7 +13,7 @@ const headerNav = [
   },
   {
     display: "Movies",
-    path: "/movies",
+    path: "/movie",
   },
   {
     display: "TV Series",
@@ -33,9 +33,9 @@ const Header = () => {
         document.body.scrollTop > 100 ||
         document.documentElement.scrollTop > 100
       ) {
-        headerRef.current.className.add("shrink");
+        headerRef.current.classList.add("shrink");
       } else {
-        headerRef.current.className.remove("shrink");
+        headerRef.current.classList.remove("shrink");
       }
     };
     window.addEventListener("scroll", shrinkHeader);

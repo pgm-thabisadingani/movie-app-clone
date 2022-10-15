@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import tmdbApi, { category, movieType } from "../../api/tmdbApi";
 
 import apiConfig from "../../api/apiConfig";
+import bgdf from "../../assets/no-cover.png";
 
 import "./hero-slide.scss";
 import { useHistory } from "react-router-dom";
@@ -26,19 +27,13 @@ const HeroSlide = () => {
         });
 
         setMovieItems(response.results.slice(0, 4));
-        console.log(response.results);
+        // console.log(response.results);
       } catch (err) {
         console.log(err);
       }
     };
     getMovies();
   }, []);
-
-  if (movieItems) {
-    console.log(movieItems);
-  } else {
-    console.log("is loading");
-  }
 
   return (
     <div className="hero-slide">
@@ -51,7 +46,7 @@ const HeroSlide = () => {
         {movieItems.map((item, i) => (
           <SwiperSlide key={i}>
             {({ isActive }) => (
-              //   <img src={apiConfig.originalImage(item.backdrop_path)} alt={item.title} />
+              //   <img src={apiConfig.originalImage(item.backdrop_path)} alt={item.title || item.name} />
               <HeroSlideitem
                 item={item}
                 className={`${isActive ? "active" : ""}`}
@@ -80,10 +75,10 @@ const HeroSlideitem = (props) => {
   const setModalActive = async () => {
     const modal = document.querySelector(`#modal_${item.id}`);
 
-    const video = await tmdbApi.getVideos(category.movie, item.id);
+    const videos = await tmdbApi.getVideos(category.movie, item.id);
 
-    if (video.results.length > 0) {
-      const videoSrc = "https://www.youtube.com/embed/" + video.results[0].key;
+    if (videos.results.length > 0) {
+      const videoSrc = "https://www.youtube.com/embed/" + videos.results[0].key;
       modal
         .querySelector(".modal__content > iframe")
         .setAttribute("src", videoSrc);
@@ -97,7 +92,6 @@ const HeroSlideitem = (props) => {
   return (
     <div
       className={`hero-slide__item ${props.className}`}
-      $
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="hero-slide__item__content container">
@@ -114,7 +108,12 @@ const HeroSlideitem = (props) => {
           </div>
         </div>
         <div className="hero-slide__item__content__poster">
-          <img src={apiConfig.w500Image(item.poster_path)} alt={item.title} />
+          <img
+            src={
+              item.poster_path ? apiConfig.w500Image(item.poster_path) : bgdf
+            }
+            alt={item.title || item.name}
+          />
         </div>
       </div>
     </div>
