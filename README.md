@@ -8,9 +8,9 @@
 
 #### pages
 
-- landing page: Trending, Movies / Series, Popular,Best rated (with a link to the details page)
-- Catalog: Series or Movie overview with a search option.
-- Movie / serie detail page, poster, synopsis , Cast members, trailers, related movies or series list.
+- landing page: trending, movies / series, popular, best-rated (with a link to the details page)
+- Catalog: series or movies overview with a search option.
+- Movie / serie detail page, poster, synopsis , cast members, trailer/trailers, related movies or series list.
 
 ## Technology, library, framework and other assets used:
 
