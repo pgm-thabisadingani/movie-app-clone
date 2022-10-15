@@ -9,7 +9,7 @@ import Routes from "./config/Routes";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={"movie-app-clone"}>
       <Route
         render={(props) => (
           <>
