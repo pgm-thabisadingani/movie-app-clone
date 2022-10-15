@@ -41,6 +41,6 @@ After cloning and installing dependencies run to start the app:
 
 ![Detail page](images/detailPage.png)
 
-#### Movie Page:
+#### Catalog Page:
 
 ![Movie page](images/catalogPage.png)
