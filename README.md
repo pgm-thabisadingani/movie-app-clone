@@ -23,6 +23,7 @@
 - Boxicons: https://boxicons.com/
 - Axios
 - Swiper
+- query-string
 
 ## Available Scripts
 
@@ -36,14 +37,10 @@ After cloning and installing dependencies run to start the app:
 
 ![Home page](images/homePage.png)
 
-#### Search Page:
-
-![Search page](images/searchPage.png)
-
 #### Detail Page:
 
 ![Detail page](images/detailPage.png)
 
 #### Movie Page:
 
-![Movie page](images/moviePage.png)
+![Movie page](images/catalogPage.png)
