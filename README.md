@@ -1,10 +1,10 @@
-# Movie Magic Application
+# Movie Application
 
 ## App Functionalities
 
 ### Overview
 
-- A responsive movie applicaion built with React and The Movie db API. Credits to (Tuat Tran Anh).
+- A responsive movie applicaion built with React and The Movie db API. Credits to Tuat Tran Anh.
 
 #### pages
 
