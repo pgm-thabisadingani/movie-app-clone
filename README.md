@@ -12,11 +12,10 @@
 - Catalog: Series or Movie overview with a search option.
 - Movie / serie detail page, poster, synopsis , Cast members, trailers, related movies or series list.
 
-## Technology, library and framework used:
+## Technology, library, framework and other assets used:
 
 - React
-- Faker JS : to seed the database with users
-- React Router DOM : Client-side routing
+- React Router DOM
 - SASS
 - API: https://www.themoviedb.org/
 - Google font: https://fonts.google.com/
@@ -27,9 +26,19 @@
 
 ## Available Scripts
 
-After cloning and installing dependencies run to start the app:
+After cloning and installing dependencies run the following command to start the app:
 
-### `npm start`
+### `npm start` or `yarn start`
+
+## Deployment GitHub pages
+
+- `yarn add -D gh-pages` or `npm install gh-pages --save-d`
+- add to package.json: "homepage": "http://username.github.io/repo",
+- "scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"}
+- git add . , commit, push.
+- Run: `npm run deploy`
 
 ## Movie App Preview:
 
