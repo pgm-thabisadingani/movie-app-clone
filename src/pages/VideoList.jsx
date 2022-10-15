@@ -12,7 +12,7 @@ const VideoList = (props) => {
       setVideos(response.results.slice(0, 5));
     };
     getVideos();
-  }, []);
+  }, [category, props.id]);
 
   return (
     <>
